@@ -28,3 +28,6 @@
 [submodule "plug/tagbar"]
 	path = plug/tagbar
 	url = git@github.com:majutsushi/tagbar.git
+[submodule "plug/nerdcommenter"]
+	path = plug/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
