@@ -37,3 +37,9 @@
 [submodule "plug/tabular"]
 	path = plug/tabular
 	url = git@github.com:godlygeek/tabular.git
+[submodule "plug/vim-indent-guides"]
+	path = plug/vim-indent-guides
+	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "plug/vim-markdown"]
+	path = plug/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
