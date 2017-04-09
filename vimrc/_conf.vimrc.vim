@@ -20,13 +20,6 @@ let mapleader = ","
 let g:mapleader = ","
 
 
-" Fast saving
-nmap <leader>w :w!<cr>
-
-"" :W sudo saves the file 
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
-
 " Increase updatetime for faster update, as opposed to default
 " of 4 secs
 "
@@ -89,7 +82,7 @@ if has('autocmd')
 endif
 
 " Slight margin on left
-set foldcolumn=1
+set foldcolumn=0
 
 
 " Colors and Fonts
@@ -153,34 +146,8 @@ set wrap
 " ---------------------------------------------------------------------------
 
 
-" Moving around, tabs, windows and buffers
+" tabs, windows and buffers
 " ---------------------------------------------------------------------------
-"
-" Move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Close the current buffer - Buffer Delete
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
-
-" Close all buffers
-map <leader>ba :bufdo bd<cr>
-
-" Move to Next/Previous buffers
-map <leader>l :bnext<cr>         "Next Buffer
-map <leader>h :bprevious<cr>     "Previous Buffer
-
-
-
-" Mapping for managing tabs
-map <leader>tc :tabnew<cr>       "Create new Tab
-map <leader>td :tabclose<cr>     "Delete new Tab
-map <leader>tn :tabnext<cr>      "Go to next tab
-map <leader>tp :tabprevious<cr>  "Go to previous tab 
-map <leader>tm :tabmove          "Move tab
-
 
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1

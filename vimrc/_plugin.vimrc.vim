@@ -142,7 +142,6 @@ let g:airline_extensions = [ 'ctrlp', 'bufferline', 'tabline', 'tagbar' ]
 let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader><leader>z :Goyo<cr>
 
 " -----------------------------------------------------------------------------
 " Vim-Markdown
