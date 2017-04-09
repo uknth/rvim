@@ -31,3 +31,9 @@
 [submodule "plug/nerdcommenter"]
 	path = plug/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "plug/vim-easymotion"]
+	path = plug/vim-easymotion
+	url = git@github.com:easymotion/vim-easymotion.git
+[submodule "plug/tabular"]
+	path = plug/tabular
+	url = git@github.com:godlygeek/tabular.git
