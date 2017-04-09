@@ -52,3 +52,9 @@
 [submodule "plug/goyo.vim"]
 	path = plug/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
+[submodule "plug/mru"]
+	path = plug/mru
+	url = git@github.com:yegappan/mru.git
+[submodule "plug/vim-gitgutter"]
+	path = plug/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
