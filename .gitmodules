@@ -16,3 +16,6 @@
 [submodule "plug/vim-go"]
 	path = plug/vim-go
 	url = git@github.com:fatih/vim-go.git
+[submodule "plug/vim-surround"]
+	path = plug/vim-surround
+	url = git@github.com:tpope/vim-surround.git
