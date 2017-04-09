@@ -93,8 +93,38 @@ let g:ctrlp_custom_ignore = {
 "
 " Position
 let g:NERDTreeWinPos = "left"                     
+
 " Size
 let g:NERDTreeWinSize=25
+
+" Different Arrow Symobols
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" close vim if only windows is nerdtree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Function to highlight file
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+   exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+" Color Code different Files
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('go', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " -----------------------------------------------------------------------------
 "  Vim-go
@@ -183,6 +213,37 @@ let g:multi_cursor_use_default_mapping=0
 "
 " keeping changes less to keep vim snappy
 let g:gitgutter_max_signs = 150
+
+" -----------------------------------------------------------------------------
+" nerdcommenter
+" ------------
+" Repository:            https://github.com/scrooloose/nerdcommenter
+" Description:           Comment functions 
+" -----------------------------------------------------------------------------
+"
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+"
 " -----------------------------------------------------------------------------
 
-
+" indent-guide
+" ------------
+" Repository:            https://github.com/nathanaelkane/vim-indent-guides
+" Description:           Indent Guide for VIM
+" -----------------------------------------------------------------------------
+"
+" Guide Size in Spaces occupied
+let g:indent_guides_guide_size = 1
+let g:indent_guides_start_level = 1
+let g:indent_guides_space_guides = 1
+let g:indent_guides_color_change_percent = 95
+let g:indent_guides_enable_on_vim_startup = 1
