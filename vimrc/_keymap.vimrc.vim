@@ -143,7 +143,7 @@ map <leader>nf :NERDTreeFind<cr>
 
 " goyo - vimroom
 " -----------------------------------------
-nnoremap <silent> <leader> <leader> z :Goyo<cr>
+nnoremap <silent> <leader>z :Goyo<cr>
 
 " vim-gitgutter
 " -----------------------------------------
@@ -205,9 +205,14 @@ nmap <F3> :GoDoc <CR>
 "
 " vim-indentguide
 " -----------------------------------------
+" Default Keymapping
+"
+"
 " Enable 
 " :nmap <silent> <Leader>ie <Plug>IndentGuidesEnable
 " Disable
 " :nmap <silent> <Leader>id <Plug>IndentGuidesDisable
 " Toggle 
 " :nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+"
+"
