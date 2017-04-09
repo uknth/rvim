@@ -27,6 +27,10 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" Increase updatetime for faster update, as opposed to default
+" of 4 secs
+"
+set updatetime=250
 
 
 " Vim User Interface 

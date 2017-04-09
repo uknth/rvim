@@ -43,7 +43,17 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+
+" Python
+let g:syntastic_python_checkers=['pyflakes']
+
+" Javascript
+let g:syntastic_javascript_checkers = ['jshint']
+
+" Go
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 " -----------------------------------------------------------------------------
 "  ctrlp.vim
@@ -66,6 +76,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
 
 
 " -----------------------------------------------------------------------------
@@ -142,5 +153,36 @@ nnoremap <silent> <leader><leader>z :Goyo<cr>
 "
 let g:vim_markdown_folding_disabled = 1
 
+
 " -----------------------------------------------------------------------------
+" mru.vim
+" ------------
+" Repository:            https://github.com/yegappan/mru
+" Description:           Most Recently Used (MRU) plugin
+" -----------------------------------------------------------------------------
+"
+let MRU_File = $HOME.'/.rvim/temp/_vim_mru_file'
+
+" -----------------------------------------------------------------------------
+" vim-multiple-cursor
+" ------------
+" Repository:            https://github.com/terryma/vim-multiple-cursors
+" Description:           multi selection for vim 
+" -----------------------------------------------------------------------------
+"
+" User custom keybinding
+let g:multi_cursor_use_default_mapping=0
+
+
+" -----------------------------------------------------------------------------
+" vim-gitgutter
+" ------------
+" Repository:            https://github.com/airblade/vim-gitgutter
+" Description:           Git-Gutter plugin for vim
+" -----------------------------------------------------------------------------
+"
+" keeping changes less to keep vim snappy
+let g:gitgutter_max_signs = 150
+" -----------------------------------------------------------------------------
+
 
