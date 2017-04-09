@@ -46,3 +46,6 @@
 [submodule "plug/vim-colorschemes"]
 	path = plug/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "plug/vim-bufferline"]
+	path = plug/vim-bufferline
+	url = git@github.com:bling/vim-bufferline.git
