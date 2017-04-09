@@ -19,3 +19,12 @@
 [submodule "plug/vim-surround"]
 	path = plug/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "plug/vim-airline"]
+	path = plug/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "plug/vim-airline-themes"]
+	path = plug/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "plug/tagbar"]
+	path = plug/tagbar
+	url = git@github.com:majutsushi/tagbar.git
