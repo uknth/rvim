@@ -49,3 +49,6 @@
 [submodule "plug/vim-bufferline"]
 	path = plug/vim-bufferline
 	url = git@github.com:bling/vim-bufferline.git
+[submodule "plug/goyo.vim"]
+	path = plug/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git
