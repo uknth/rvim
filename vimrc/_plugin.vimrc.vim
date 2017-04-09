@@ -1,8 +1,11 @@
 " -----------------------------------------------------------------------------
 " ACK.VIM
 " -------
+" Repository:            https://github.com/mileszs/ack.vim
+" Description:           Run your favorite search tool from Vim
+" -----------------------------------------------------------------------------
 "
-"  Use Ack/Ag to search for file
+" Use Ack/Ag to search for file
 " 
 " Results Keyboard Shortcuts
 " --------------------------
@@ -26,6 +29,9 @@ map <leader>g :Ack
 " -----------------------------------------------------------------------------
 " Syntastic
 " ---------
+" Repository:            https://github.com/vim-syntastic/syntastic
+" Description:           Syntastic is a syntax checking plugin for Vim
+" -----------------------------------------------------------------------------
 "
 " Syntactical validation of file
 " -----------------------------
@@ -42,6 +48,9 @@ let g:syntastic_check_on_wq = 0
 " -----------------------------------------------------------------------------
 "  ctrlp.vim
 "  ---------
+" Repository:            https://github.com/ctrlpvim/ctrlp.vim
+" Description:           Full path fuzzy file, buffer, mru, tag, ... finder 
+" -----------------------------------------------------------------------------
 "
 "  Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 
@@ -62,6 +71,10 @@ let g:ctrlp_custom_ignore = {
 " -----------------------------------------------------------------------------
 " Nerdtree
 " --------
+" Repository:            https://github.com/scrooloose/nerdtree
+" Description:           The NERD tree allows you to explore your filesystem 
+"                        and to open files and directories 
+" -----------------------------------------------------------------------------
 "
 " Basic Settings
 "  
@@ -70,19 +83,26 @@ let g:ctrlp_custom_ignore = {
 let g:NERDTreeWinPos = "left"                     
 " Size
 let g:NERDTreeWinSize=25
+
 " -----------------------------------------------------------------------------
-"
-"
 "  Vim-go
 "  ------
+" Repository:            https://github.com/fatih/vim-go
+" Description:           Go language support for Vim 
+" -----------------------------------------------------------------------------
 "
 " Ignore pkg/* directory
 set wildignore+=*/pkg/*,*/vendor/*
+let g:go_fmt_command = "goimports"
 
 
 " -----------------------------------------------------------------------------
-"  Youcompleteme
-"  -------------
+" Youcompleteme
+" -------------
+" Repository:            https://github.com/Valloric/YouCompleteMe
+" Description:           YouCompleteMe is a fast, as-you-type, fuzzy-search 
+"                        code completion engine for Vim
+" -----------------------------------------------------------------------------
 "
 "  Disable Preview Window
 "
@@ -90,14 +110,37 @@ set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 
 " -----------------------------------------------------------------------------
-"
-"  Airline
-"  -------
-"
 " Airline
+" -------
+" Repository:            https://github.com/vim-airline/vim-airline 
+"                        https://github.com/vim-airline/vim-airline-themes
+" Description:           Lean & mean status/tabline for vim that's light as air.
+" -----------------------------------------------------------------------------
+"
 let g:airline_theme = 'base16_twilight'
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = [ 'ctrlp', 'bufferline', 'tabline', 'tagbar' ]
+
+" -----------------------------------------------------------------------------
+" Vimroom
+" -------
+" Repository:            https://github.com/junegunn/goyo.vim
+" Description:           Distraction-free writing in Vim.
 " -----------------------------------------------------------------------------
 "
+let g:goyo_width=100
+let g:goyo_margin_top = 2
+let g:goyo_margin_bottom = 2
+nnoremap <silent> <leader><leader>z :Goyo<cr>
+
+" -----------------------------------------------------------------------------
+" Vim-Markdown
+" ------------
+" Repository:            https://github.com/plasticboy/vim-markdown
+" Description:           Syntax highlighting, matching rules and mappings for MD
+" -----------------------------------------------------------------------------
 "
+let g:vim_markdown_folding_disabled = 1
+
+" -----------------------------------------------------------------------------
+
