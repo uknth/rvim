@@ -52,8 +52,9 @@ let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_javascript_checkers = ['jshint']
 
 " Go
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+" **** Using this causes slowdown while saving a file ****
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 " -----------------------------------------------------------------------------
 "  ctrlp.vim
