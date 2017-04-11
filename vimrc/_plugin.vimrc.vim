@@ -1,4 +1,3 @@
-" -----------------------------------------------------------------------------
 " ACK.VIM
 " -------
 " Repository:            https://github.com/mileszs/ack.vim
@@ -136,7 +135,8 @@ call NERDTreeHighlightFile('go', 'Magenta', 'none', '#ff00ff', '#151515')
 " Ignore pkg/* directory
 set wildignore+=*/pkg/*,*/vendor/*
 let g:go_fmt_command = "goimports"
-
+let g:go_fmt_autosave = 1
+autocmd BufWritePost *.go :GoMetaLinter
 
 " -----------------------------------------------------------------------------
 " Youcompleteme
@@ -246,4 +246,4 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
 let g:indent_guides_space_guides = 1
 let g:indent_guides_color_change_percent = 95
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0

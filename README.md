@@ -2,7 +2,35 @@
 
 Collection of plugins and customization on vimrc
 
+## Intallation
 
+Clone the repository recursively in your home directory. 
+```
+   git clone  --recursive git@github.com:uknth/rvim.git
+```
+> Note: Changing the name of the directory or cloning it elsewhere is not supported.
+
+Compile binaries of `YouCompleteMe`
+
+- Go to folder `~/.rvim/plug/YouCompleteMe` 
+- Run Command `./install.py --gocode-completer` for go autocomplete
+
+Add following in your `~/.vimrc`
+
+```
+set runtimepath+=~/.rvim
+
+source ~/.rvim/vimrc.vim
+```
+
+## Customization
+
+- To customize the configuration create file `~/.rvim/custom.vimrc.vim`
+- Add configuration to the file
+
+
+
+## Keymap
 
 Standard Keymap, can be customized by adding more in `~/.rvim/custom.vimrc.vim`
 
