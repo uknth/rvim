@@ -133,7 +133,7 @@ call NERDTreeHighlightFile('go', 'Magenta', 'none', '#ff00ff', '#151515')
 " -----------------------------------------------------------------------------
 "
 " Ignore pkg/* directory
-set wildignore+=*/pkg/*,*/vendor/*
+set wildignore+=*/pkg/*,*/vendor/*,*/bin/*
 let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 autocmd BufWritePost *.go :GoMetaLinter
