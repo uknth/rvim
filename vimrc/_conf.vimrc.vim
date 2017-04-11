@@ -226,3 +226,7 @@ autocmd! bufwritepost vimrc source ~/.rvim/vimrc.vim
 " ---------------------------------------------------------------------------
 iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 
+" Colorscheme
+" ---------------------------------------------------------------------------
+"
+colorscheme Tomorrow-Night

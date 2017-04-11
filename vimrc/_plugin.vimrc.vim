@@ -159,7 +159,7 @@ let g:ycm_add_preview_to_completeopt = 0
 " Description:           Lean & mean status/tabline for vim that's light as air.
 " -----------------------------------------------------------------------------
 "
-let g:airline_theme = 'base16_twilight'
+let g:airline_theme = 'tomorrow'
 let g:airline_powerline_fonts = 1
 let g:airline_extensions = [ 'ctrlp', 'bufferline', 'tabline', 'tagbar' ]
 
