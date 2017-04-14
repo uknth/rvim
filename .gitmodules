@@ -61,3 +61,6 @@
 [submodule "plug/vim-fugitive"]
 	path = plug/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "plug/vim-rest-console"]
+	path = plug/vim-rest-console
+	url = git@github.com:diepm/vim-rest-console.git
