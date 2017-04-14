@@ -13,6 +13,6 @@ source ~/.rvim/vimrc/_keymap.vimrc.vim
 
 " Override
 try 
-	source custom.vimrc.vim
+	source ~/.rvim/custom.vimrc.vim
 catch
 endtry

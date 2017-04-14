@@ -216,3 +216,12 @@ nmap <F3> :GoDoc <CR>
 " :nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 "
 "
+" vim-rest-console
+" -----------------------------------------
+"
+" Make a buffer in a rest console
+"
+" <C-j> trigger key
+
+map <leader><leader>r :set ft=rest <CR>
+
