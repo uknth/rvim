@@ -6,7 +6,7 @@ Collection of plugins and customization on vimrc
 
 Clone the repository recursively in your home directory. 
 ```
-   git clone  --recursive git@github.com:uknth/rvim.git
+   git clone  --recursive git@github.com:uknth/rvim.git ~/.rvim
 ```
 > Note: Changing the name of the directory or cloning it elsewhere is not supported.
 
