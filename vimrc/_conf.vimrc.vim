@@ -231,4 +231,4 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 " Colorscheme
 " ---------------------------------------------------------------------------
 "
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
