@@ -41,7 +41,8 @@ nmap <F6> :tabnext <CR>       " Next Tab
 
 " Close the current buffer - Buffer Delete
 " -----------------------------------------
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bd :bdelete<cr>:tabclose<cr>gT
+map <C-e> :bdelete<cr>:tabclose<cr>gT
 
 " Close all buffers
 " -----------------------------------------
