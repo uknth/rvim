@@ -232,3 +232,11 @@ iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
 " ---------------------------------------------------------------------------
 "
 " colorscheme Tomorrow-Night
+
+" Close buffer if no other buffer is open
+"
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
+aug END
+
