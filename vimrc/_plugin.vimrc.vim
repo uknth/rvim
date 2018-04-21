@@ -26,36 +26,6 @@
 map <leader>g :Ack
 
 " -----------------------------------------------------------------------------
-" Syntastic
-" ---------
-" Repository:            https://github.com/vim-syntastic/syntastic
-" Description:           Syntastic is a syntax checking plugin for Vim
-" -----------------------------------------------------------------------------
-"
-" Syntactical validation of file
-" -----------------------------
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-
-" Python
-let g:syntastic_python_checkers=['pyflakes']
-
-" Javascript
-let g:syntastic_javascript_checkers = ['jshint']
-
-" Go
-" **** Using this causes slowdown while saving a file ****
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
-
-" -----------------------------------------------------------------------------
 "  ctrlp.vim
 "  ---------
 " Repository:            https://github.com/ctrlpvim/ctrlp.vim
