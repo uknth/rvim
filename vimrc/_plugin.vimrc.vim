@@ -107,8 +107,17 @@ set wildignore+=*/pkg/*,*/vendor/*,*/bin/*
 let g:go_fmt_command = "goimports"
 let g:go_fmt_autosave = 1
 let g:go_def_reuse_buffer = 1
-let g:go_metalinter_enabled = ['vet', 'golint']
+" force metalinter to do more
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck','goconst','staticcheck','dupl','deadcode','ineffassign','megacheck','unconvert','misspell','vetshadow'] 
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_excludes = [".*\.pb\.go","_test\.go"]
+let g:go_metalinter_deadline = "150s"
+let g:go_metalinter_autosave = 1
+" disable fmt's error instead use metalinter
 let g:go_echo_command_info=0
+let g:go_fmt_fail_silently = 1
+let g:go_list_height = 5
+let g:go_alternate_mode = "vsplit"
 autocmd BufWritePost *.go :GoMetaLinter
 
 " -----------------------------------------------------------------------------
