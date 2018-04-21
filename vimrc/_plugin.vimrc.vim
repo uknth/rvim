@@ -109,6 +109,7 @@ let g:go_fmt_autosave = 1
 let g:go_def_reuse_buffer = 1
 let g:go_metalinter_enabled = ['vet', 'golint']
 let g:go_echo_command_info=0
+let g:go_alternate_mode = "vsplit"
 autocmd BufWritePost *.go :GoMetaLinter
 
 " -----------------------------------------------------------------------------
