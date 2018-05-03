@@ -61,3 +61,6 @@
 [submodule "plug/vim-rest-console"]
 	path = plug/vim-rest-console
 	url = git@github.com:diepm/vim-rest-console.git
+[submodule "plug/gotests-vim"]
+	path = plug/gotests-vim
+	url = https://github.com/buoto/gotests-vim.git
